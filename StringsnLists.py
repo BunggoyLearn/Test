@@ -12,12 +12,15 @@ for w in stuff :
 line = 'A lot                     of spaces'
 etc = line.split()
 print(etc)
+#splits will ignore a lot of spaces and still only single out the strings themselves
 
 line2 = 'first;second;third'
 thing = line2.split()
 print(thing)
 print(len(thing))
+#Sometimes strings we get back are not spaced with ' ' so it doesn't work
 
 thing2 = line2.split(';')
 print(thing2)
 print(len(thing2))
+#we can set .split(DELIMITER) to whatever and it will use those points as a splitter instead of ' '
